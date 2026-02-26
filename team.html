@@ -210,6 +210,44 @@ body{
   gap:44px;
   justify-content:center;
 }
+
+/*ADJUSTMENTS BY QNXTZZZ*/
+
+.team-dock{
+  margin-top:70px;
+  margin-bottom:10px;
+  font-size:13px;
+  letter-spacing:5px;
+  color:var(--accent);
+  font-weight:700;
+}
+
+.center-grid{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.grid{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(2, 280px);
+  gap:44px;
+  justify-content:center;
+}
+
+.card{
+  text-align:center;
+}
+
+
+.team-header{
+  margin-top:40px;
+  margin-bottom:60px;
+}
+
+
+
 .modal{
   position:fixed;
   inset:0;
@@ -413,62 +451,83 @@ body{
 
   
  
-<div class="section-label">OWNERS</div>
-
-<div class="grid">
-  
-  <div class="card" onclick="openModal('ThatOneDipu','Owner')">
-    <div class="flag">
-  <img src="https://flagcdn.com/w40/np.png" alt="Nepal">
+<div class="team-dock">
+OWNERS
 </div>
 
-    <div class="skin-wrap">
-      <img src="resources/dipu_skin.png" alt="ThatOneDipu Skin">
+<div class="grid">
+
+  <div class="card" onclick="openModal('ThatOneDipu','Owner')">
+
+    <div class="flag">
+      <img src="https://flagcdn.com/w40/np.png">
     </div>
+
+    <div class="skin-wrap">
+      <img src="resources/dipu_skin.png">
+    </div>
+
     <div class="name">ThatOneDipu</div>
     <div class="role">OWNER</div>
+
     <div class="discord-info">
       <i class="fab fa-discord discord"></i>
       <span class="discord-username">thatonedipu</span>
     </div>
+
   </div>
 
-  
+
   <div class="card" onclick="openModal('Cycy_yee','Owner')">
+
     <div class="flag">
-  <img src="https://flagcdn.com/w40/cn.png" alt="China">
-</div>
-    <div class="skin-wrap">
-      <img src="resources/pfp2.png" alt="Cycy_yee Skin">
+      <img src="https://flagcdn.com/w40/cn.png">
     </div>
+
+    <div class="skin-wrap">
+      <img src="resources/pfp2.png">
+    </div>
+
     <div class="name">Cycy_yee</div>
     <div class="role">OWNER</div>
+
     <div class="discord-info">
       <i class="fab fa-discord discord"></i>
       <span class="discord-username">cycy_yee</span>
     </div>
-  </div>
-</div>
- 
-<div class="section-label">DEVELOPERS</div>
 
-<div class="dev-grid">
-  <div class="card" onclick="openModal('T3kkm0tt','Lead Developer')">
-    <div class="flag">
-  <img src="https://flagcdn.com/w40/de.png" alt="Germany">
+  </div>
+
 </div>
 
-    <div class="skin-wrap">
-      <img src="resources/pfp4.png" alt="T3kkm0tt Skin">
-    </div>
-    <div class="name">T3kkm0tt</div>
-    <div class="role">Co Owner</div>
-    <div class="discord-info">
-      <i class="fab fa-discord discord"></i>
-      <span class="discord-username">t3kkm0tt</span>
-    </div>
-  </div>
+
+
+<div class="team-dock">
+CO-OWNER
 </div>
+
+<div class="center-grid">
+
+<div class="card" onclick="openModal('T3kkm0tt','Co Owner')">
+
+  <div class="flag">
+    <img src="https://flagcdn.com/w40/de.png">
+  </div>
+
+  <div class="skin-wrap">
+    <img src="resources/pfp4.png">
+  </div>
+
+  <div class="name">T3kkm0tt</div>
+  <div class="role">CO-OWNER</div>
+
+  <div class="discord-info">
+    <i class="fab fa-discord discord"></i>
+    <span class="discord-username">t3kkm0tt</span>
+  </div>
+
+</div>
+
 </div>
 
 
@@ -480,6 +539,7 @@ body{
     <div class="close" onclick="closeModal()">Close</div>
   </div>
 </div>
+
 
 <style>
 .kruth-footer{
